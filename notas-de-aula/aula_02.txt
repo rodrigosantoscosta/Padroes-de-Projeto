@@ -1,0 +1,24 @@
+29/08/2025 - Aula 02 - Unidade I
+
+- Padrões de projeto
+    - Clean Code
+    - Design Pattern
+    - SOLID
+    - Opções de IDE(linguagem utilizada para disciplina a principio vai ser Java)
+    - Enfase no uso de Git e github ao trabalhar em um projeto
+    - Explicação sobre POO e seus conceitos
+        - Abstração: caracteristicas essenciais para identificar um objeto, para assim ser utilizado.
+        - Encapsulamento
+        - objeto
+        - classe 
+        - Variavel: um estado definido para um objeto
+        - Função: é um comportamento. 
+        - UML de objetos
+        - Debug ou depuração
+        - O que é uma classe
+        - variaveis s substantivos
+        - metodos são verbos no infinitivo
+        -  Conceitos de boas praticas de programação
+        - Classe inicia com letra maiscula, atributos/variaveis com miniscula e metodos.
+        - exemplo simples hardcoded de um classe <Conta> e inicicialização de um objeto dessa classe.
+
