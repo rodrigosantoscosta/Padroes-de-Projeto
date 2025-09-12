@@ -21,4 +21,5 @@
         -  Conceitos de boas praticas de programação
         - Classe inicia com letra maiscula, atributos/variaveis com miniscula e metodos.
         - exemplo simples hardcoded de um classe <Conta> e inicicialização de um objeto dessa classe.
+        - o que é o main
 
