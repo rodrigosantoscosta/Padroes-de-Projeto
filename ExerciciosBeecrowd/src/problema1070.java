@@ -7,12 +7,21 @@ public class problema1070 {
         int horaInicial = scanner.nextInt();
         int horaFinal = scanner.nextInt();
 
+        int duracao = 0;
 
-        if(horaInicial == horaFinal) System.out.println("O JOGO DUROU 24 HORA(S)");
+        if(horaInicial == horaFinal) duracao = 24;
 
-        if(horaInicial > horaFinal) System.out.println("O JOGO DUROU " + ((24 - horaInicial) + horaFinal) + " HORA(S)");
+        if(horaInicial > horaFinal) duracao = (24 - horaInicial) + horaFinal;
 
-        if(horaInicial < horaFinal) System.out.println("O JOGO DUROU " + (horaFinal - horaInicial) + " HORA(S)");
+        if(horaFinal > horaInicial) duracao = horaFinal - horaInicial;
+
+        System.out.println("O JOGO DUROU " + (duracao) + " HORA(S)");
+
+//        if(horaInicial == horaFinal) System.out.println("O JOGO DUROU 24 HORA(S)");
+//
+//        if(horaInicial > horaFinal) System.out.println("O JOGO DUROU " + ((24 - horaInicial) + horaFinal) + " HORA(S)");
+//
+//        if(horaInicial < horaFinal) System.out.println("O JOGO DUROU " + (horaFinal - horaInicial) + " HORA(S)");
 
 
     }
