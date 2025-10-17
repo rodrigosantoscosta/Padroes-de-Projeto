@@ -29,11 +29,11 @@ public class Main {
         contaPoupanca.transferir(10, contaCorrente);
 //        //Falta atualizar saldo após transferencia
 //        System.out.println("Saldo contaCorrente: R$" + contaCorrente.getSaldo());
-        System.out.println("Saldo contaPoupança após transferencia: R$" + contaPoupanca.getSaldo());
+        System.out.println("Saldo contaPoupança após fazer a transferencia de R$10,00: R$" + contaPoupanca.getSaldo());
 
         // Calculando imposto fixo de 1%
         CalculadorDeImpostos calculo = new CalculadorDeImpostos();
         double imposto = calculo.calcular(contaCorrente);
-        System.out.println("Imposto aplicado ao saldo atual de contaCorrente: " + imposto);
+        System.out.println("Calculo do imposto ao saldo atual de contaCorrente R$" + contaCorrente.getSaldo() + ": R$" + imposto);
     }
 }
