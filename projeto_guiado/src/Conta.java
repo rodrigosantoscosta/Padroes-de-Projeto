@@ -35,6 +35,7 @@ public class Conta {
     public boolean transferir(double valor, Conta contaDestino) {
         if (valor > 0 && saldo >= valor) {
             saldo -= valor;
+            contaDestino.depositar(valor);
             return true;
         }
         return false;
