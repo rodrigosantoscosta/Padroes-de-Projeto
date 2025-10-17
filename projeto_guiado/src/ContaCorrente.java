@@ -15,7 +15,7 @@ public class ContaCorrente extends Conta implements Tributavel {
 
     @Override
     public double calcularImposto() {
-        //Utilizando o metodo da interface Tributavel
+        //Sobreescrevendo o metodo da interface Tributavel
         // para aplicar imposto de 1%
         return this.getSaldo() * 0.01;
     }
