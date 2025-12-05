@@ -1,18 +1,35 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Atendimento {
+    @JsonProperty("id")
     private int id;
+    @JsonProperty("cliente")
     private Cliente cliente;
+    @JsonProperty("veiculo")
     private Veiculo veiculo;
+    @JsonProperty("tipoServico")
     private String tipoServico;
+    @JsonProperty("status")
     private String status;
 
-    public Atendimento(int id, Cliente cliente, Veiculo veiculo, String tipoServico) {
+    @JsonCreator
+    public Atendimento(
+            @JsonProperty("id") int id,
+            @JsonProperty("cliente") Cliente cliente,
+            @JsonProperty("veiculo") Veiculo veiculo,
+            @JsonProperty("tipoServico") String tipoServico) {
         this.id = id;
         this.cliente = cliente;
         this.veiculo = veiculo;
         this.tipoServico = tipoServico;
         this.status = "PENDENTE";
+    }
+
+    // Construtor para o Jackson
+    public Atendimento() {
     }
 
     public int getId() { return id; }

@@ -1,4 +1,7 @@
 import facade.SistemaAtendimentoFacade;
+import adapter.AtendimentoAdapter;
+import adapter.SistemaLegadoAtendimento;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +30,15 @@ public class Main {
                 "INT-5678", "Model 3", "Tesla",
                 "VISTORIA"
         );
+
+        // Testando o Adapter com leitura de JSON
+        System.out.println("\n>>> Testando leitura de atendimento a partir de JSON <<<\n");
+        
+        try {
+            String filePath = System.getProperty("user.dir") + "/atendimento.json";
+            sistema.registrarAtendimentoDeJson(filePath);
+        } catch (Exception e) {
+            System.err.println("Erro ao processar o arquivo JSON: " + e.getMessage());
+        }
     }
 }
