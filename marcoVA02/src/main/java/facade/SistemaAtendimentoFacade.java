@@ -67,4 +67,14 @@ public class SistemaAtendimentoFacade {
             this.documentoFactory = new DocumentoBrasilFactory();
         }
     }
+
+    /**
+     * Registra um atendimento a partir de um arquivo JSON
+     * @param filePath Caminho do arquivo JSON contendo os dados do atendimento
+     * @throws Exception Se ocorrer um erro ao processar o arquivo JSON
+     */
+    public void registrarAtendimentoDeJson(String filePath) throws Exception {
+        System.out.println("\n[FACADE] Processando atendimento a partir de JSON...");
+        adapter.registrarAtendimentoDeJson(filePath);
+    }
 }
